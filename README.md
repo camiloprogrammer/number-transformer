@@ -63,8 +63,8 @@ The number transformers are built as a set of reusable "Lego" bricks that handle
 
 For example, to transform numbers to English, one of the bricks is the *million transformer* that is responsible of:
 
-1. For a number of the form `XXXYYYYYY` (like `102000450`), it will take care of the `XXX` part and handle the millions part. If the number doesn't define anything in the millions section, it skips to part 2 below (for example, a number like `123` has no millions defined)
-2. Delegate the YYYYYY part to an the next appropriate "Lego" brick, in this case, the *thousand transformer*.
+1. For a number of the form `XXXYYYYYY` (like `102000450`), it will take care of the `XXX` part and handle the millions part. The number might not define anything in the millions section, and in this case it skips straight to part 2 below, for example, a number like `123` has no millions defined).
+2. Delegate the YYYYYY part to the next appropriate "Lego" brick, in this case, the *thousand transformer*.
 
 In this sense, you will find that the `BillionTransformer` class uses the `MillionTransformer` which uses the `ThousandTransformer` and so on...
 

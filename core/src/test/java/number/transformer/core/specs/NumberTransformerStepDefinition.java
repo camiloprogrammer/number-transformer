@@ -7,6 +7,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import number.transformer.core.NumberToEnglishTextTransformer;
+import number.transformer.core.NumberToSpanishTextTransformer;
 import number.transformer.core.NumberToTextTransformer;
 
 public class NumberTransformerStepDefinition {
@@ -28,6 +29,11 @@ public class NumberTransformerStepDefinition {
         this.transformer = new NumberToEnglishTextTransformer();
     }
     
+    @Given("I want to transform numbers in Spanish")
+    public void givenIWantToTransformNumbersInSpanish() throws Throwable {
+        this.transformer = new NumberToSpanishTextTransformer();
+    }
+
     @Given("I want to transform number {string}")
     public void givenIWantToTransformNumber(String number) throws Throwable {
         this.numberToTransform = number;

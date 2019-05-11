@@ -27,7 +27,7 @@ public class NumberTransformerStepDefinition {
     public void givenIWantToTransformNumbersInEnglish() throws Throwable {
         this.transformer = new NumberToEnglishTextTransformer();
     }
-    
+
     @Given("I want to transform number {string}")
     public void givenIWantToTransformNumber(String number) throws Throwable {
         this.numberToTransform = number;

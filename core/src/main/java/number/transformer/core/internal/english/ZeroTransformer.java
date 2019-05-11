@@ -7,7 +7,7 @@ import number.transformer.core.internal.IntNumberTransformer;
 public class ZeroTransformer implements IntNumberTransformer {
 
     private static final String ZERO = "zero";
-    
+
     private final IntNumberTransformer delegate;
 
     public ZeroTransformer(IntNumberTransformer delegate) {

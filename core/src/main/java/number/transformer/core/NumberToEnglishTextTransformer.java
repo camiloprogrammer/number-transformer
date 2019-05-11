@@ -24,14 +24,14 @@ public class NumberToEnglishTextTransformer implements NumberToTextTransformer {
 
     /**
      * Transforms the input <code>String</code> number into its English textual representation.
-     * 
+     *
      * <p>
      * For example:
      * <ul>
      * <li><code>"1"</code> to <code>"One"</code>
      * <li><code>"-11"</code> to <code>"Negative eleven"</code>
      * </ul>
-     * 
+     *
      * <p>
      * Valid inputs:
      * <ul>
@@ -41,7 +41,7 @@ public class NumberToEnglishTextTransformer implements NumberToTextTransformer {
      * <code>-</code> to represent negative numbers.
      * <li>"-0" is considered an invalid input.
      * </ul>
-     * 
+     *
      * @throws NullPointerException     if the input is <code>null</code>
      * @throws IllegalArgumentException if the input doesn't conform to the specification above.
      */

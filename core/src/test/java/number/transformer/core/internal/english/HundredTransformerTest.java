@@ -6,8 +6,6 @@ import java.io.PrintWriter;
 
 import org.junit.Test;
 
-import number.transformer.core.internal.english.HundredTransformer;
-
 public class HundredTransformerTest {
 
     private HundredTransformer transformer = new HundredTransformer();

@@ -6,8 +6,6 @@ import java.io.PrintWriter;
 
 import org.junit.Test;
 
-import number.transformer.core.internal.english.UnitAndTenTransformer;
-
 public class UnitAndTenTransformerTest {
 
     private UnitAndTenTransformer transformer = new UnitAndTenTransformer();

@@ -5,10 +5,10 @@ import java.io.PrintWriter;
 /**
  * Internal base class for number transformers that are regular, this means, numbers that when
  * transformed have the following structure:
- * 
+ *
  * <p>
  * <code>[UNITS[ ]UNITS_NAME][[ ]REMAINDER]</code>, where parts in square brackets are optional.
- * 
+ *
  * <p>
  * For example, in English, numbers in the hundreds, thousands and millions are regular. In the case
  * of a hundreds transformer, we can break the number <code>120</code> as follows:
@@ -20,11 +20,11 @@ import java.io.PrintWriter;
  * <li>a space separator
  * <li><code>REMAINDER=20</code> which transformed is <code>twenty</code>
  * </ul>
- * 
+ *
  * <p>
  * This results in <code>120 -> "one hundred twenty"</code>, and we can apply the same principle to
  * other regular numbers.
- * 
+ *
  * <p>
  * In general, {@link RegularIntNumberTransformer} rely on other {@link IntNumberTransformer} to
  * transform the <code>UNITS</code> and the <code>REMAINDER</code>

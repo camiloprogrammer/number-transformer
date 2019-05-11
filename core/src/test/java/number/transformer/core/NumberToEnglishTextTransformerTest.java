@@ -15,7 +15,7 @@ public class NumberToEnglishTextTransformerTest {
     public void testNegativeZero() {
         transformer.transformNumber("-0");
     }
-    
+
     @Test(expected = IllegalArgumentException.class)
     public void testNotAnInt() {
         transformer.transformNumber("abc");

@@ -23,5 +23,11 @@ application {
     mainClassName = "number.transformer.repl.Main"
 }
 
+task buildRepl(type: Sync) {
+    dependsOn installDist
+    from "$buildDir/install/${project.name}"
+    into "$rootDir/launcher"
+}
+
 sourceCompatibility = 1.8
 targetCompatibility = 1.8

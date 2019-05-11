@@ -7,8 +7,8 @@ More examples can be found in the [specification file](https://github.com/camilo
 # Features available
 
 * An English number transformer. This transformer is available in the `master` branch and considered ready. It supports all numbers covered by the `int` data type.
-** It supports all numbers in-between -2147483648 and 2147483647, however "-0" is considered an invalid input.
-** Or, if you're familiar with Java, as long as Java can parse your input when running `Integer.parseInt` it should be currently supported.
+  * It supports all numbers in-between -2147483648 and 2147483647, however "-0" is considered an invalid input.
+  * Or, if you're familiar with Java, as long as Java can parse your input when running `Integer.parseInt` it should be currently supported.
 * In development, an Spanish transformer considered beta with similar constraints as the above. Currently in branch `feature/1/spanish_language`.
 
 # How to run locally?

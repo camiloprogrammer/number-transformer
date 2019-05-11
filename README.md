@@ -14,35 +14,35 @@ To run it:
 2. Open a terminal (or command prompt in Windows) and head to the folder where you cloned the project
 3. Run the build:
 
-Windows:
+  Windows:
 
 ```bash
 gradlew clean buildRepl
 ```
 
-Linux/Mac:
+  Linux/Mac:
 
 ```bash
 ./gradlew clean buildRepl
 ```
 
-This should build and package the application and put it inside a `launcher` folder. 
+  This should build and package the application and put it inside a `launcher` folder. 
 
 4. Run the application:
 
-Windows:
+  Windows:
 
 ```bash
 launcher\bin\repl
 ```
 
-Linux/Mac:
+  Linux/Mac:
 
 ```bash
 ./launcher/bin/repl
 ```
 
-NOTE: The steps above have been tried in Windows and Linux. But they should work in Mac as well.
+  NOTE: The steps above have been tried in Windows and Linux. But they should work in Mac as well.
 
 # Contributing changes / developer documentation
 
@@ -50,8 +50,8 @@ NOTE: The steps above have been tried in Windows and Linux. But they should work
 
 The project uses Gradle to handle the project build. The main project is divided into 2 sub-projects:
 
-. `core`: That contains the main library that performs the number transformation
-. `repl`: A command-line application that allows users to quickly try the main transformation library
+* `core`: That contains the main library that performs the number transformation
+* `repl`: A command-line application that allows users to quickly try the main transformation library
 
 ## About the code
 
@@ -91,6 +91,6 @@ However, you can configure publishers in the Gradle build and publish to your lo
 
 # Features available
 
-. In `master` branch and considered ready an English transformer. It supports all numbers covered by the `int` data type.
-. In development, an Spanish transformer considered beta. Currently in branch `feature/1/spanish_language`.
+* In `master` branch and considered ready an English transformer. It supports all numbers covered by the `int` data type.
+* In development, an Spanish transformer considered beta. Currently in branch `feature/1/spanish_language`.
 

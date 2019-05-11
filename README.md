@@ -68,8 +68,8 @@ For example, to transform numbers to English, one of the bricks is the *million 
 
 In this sense, you will find that the `BillionTransformer` class uses the `MillionTransformer` which uses the `ThousandTransformer` and so on...
 
-The `internal` packages define this reusable components.
-The `core` (non-internal` packages define interfaces & classes that expose a combination of these "Lego" bricks put together to serve a specific requirement.
+The `internal` packages define these reusable components.
+The `core` (non-internal) package defines interfaces & classes that expose a combination of these "Lego" bricks put together to serve a specific requirement.
 
 Different languages might use the "Lego" bricks in a different way or will need to define their own set of components and they should evolve as more features are added to the `core` library.
 

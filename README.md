@@ -4,6 +4,13 @@ This project provides a library to transform numbers into their text representat
 
 More examples can be found in the [specification file](https://github.com/camiloprogrammer/number-transformer/blob/master/core/src/test/java/number/transformer/core/specs/english/EnglishNumberTransformationTest.feature)
 
+# Features available
+
+* An English number transformer. This transformer is available in the `master` branch and considered ready. It supports all numbers covered by the `int` data type.
+** It supports all numbers in-between -2147483648 and 2147483647, however "-0" is considered an invalid input.
+** Or, if you're familiar with Java, as long as Java can parse your input when running `Integer.parseInt` it should be currently supported.
+* In development, an Spanish transformer considered beta with similar constraints as the above. Currently in branch `feature/1/spanish_language`.
+
 # How to run locally?
 
 To try the project locally we provide a command line interface (similar to a REPL) to convert numbers to English.
@@ -88,9 +95,3 @@ We use a combination of Cucumber to test the specification of the number transfo
 This library isn't published to a central artifact repo (like Maven Central) and there are no plans to do so. It's a sample project.
 
 However, you can configure publishers in the Gradle build and publish to your local Maven repo to give it a try in other projects.
-
-# Features available
-
-* In `master` branch and considered ready an English transformer. It supports all numbers covered by the `int` data type.
-* In development, an Spanish transformer considered beta. Currently in branch `feature/1/spanish_language`.
-

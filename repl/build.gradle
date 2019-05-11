@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+dependencies {
+    implementation project(':core')
+    
+    testImplementation 'junit:junit:4.12'
+    
+    testImplementation 'io.cucumber:cucumber-java:4.3.0'
+    testImplementation 'io.cucumber:cucumber-junit:4.3.0'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+application {
+    mainClassName = "number.transformer.repl.Main"
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
